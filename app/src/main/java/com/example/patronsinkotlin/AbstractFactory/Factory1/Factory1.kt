@@ -13,6 +13,6 @@ class Factory1 : AbstractFactory() {
 
     override fun CreateServicioBackUp(): BackUp {
         println("Backup al api")
-       return APIBackUp()
+       return APIBackUp(CreateServicioNotification())
     }
 }

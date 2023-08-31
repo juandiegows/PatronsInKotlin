@@ -1,8 +1,11 @@
 package com.example.patronsinkotlin.AbstractFactory.Implements.BackUp
 
-class DatabaseBackUp:BackUp() {
+import com.example.patronsinkotlin.AbstractFactory.Implements.Notification.Notification
+
+class DatabaseBackUp(var notification: Notification):BackUp(notification) {
     override fun createBackUp(): Int {
         //creado copia de seguridad
+        this.Notify(notification)
         return 10
     }
 }

@@ -2,7 +2,7 @@ package com.example.patronsinkotlin.AbstractFactory.Implements.BackUp
 
 import com.example.patronsinkotlin.AbstractFactory.Implements.Notification.Notification
 
-abstract class BackUp {
+abstract class BackUp(notification: Notification) {
     abstract  fun createBackUp():Int
     fun finish(){
         println("Ha finalizado")

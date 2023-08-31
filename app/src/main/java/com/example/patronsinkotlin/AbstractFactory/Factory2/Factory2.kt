@@ -13,6 +13,6 @@ class Factory2:AbstractFactory() {
 
     override fun CreateServicioBackUp(): BackUp {
         println("Backup al database")
-        return DatabaseBackUp()
+        return DatabaseBackUp(CreateServicioNotification())
     }
 }
